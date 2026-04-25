@@ -1,4 +1,35 @@
 (() => {
+  const nav = document.getElementById('nav');
+  const navToggle = document.getElementById('navToggle');
+  const navMenu = document.getElementById('navMenu');
+
+  if (nav && navToggle && navMenu) {
+    const closeNav = () => {
+      nav.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Open menu');
+      document.body.style.overflow = '';
+    };
+    const openNav = () => {
+      nav.classList.add('is-open');
+      navToggle.setAttribute('aria-expanded', 'true');
+      navToggle.setAttribute('aria-label', 'Sluit menu');
+      document.body.style.overflow = 'hidden';
+    };
+    navToggle.addEventListener('click', () => {
+      nav.classList.contains('is-open') ? closeNav() : openNav();
+    });
+    navMenu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', closeNav);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav.classList.contains('is-open')) closeNav();
+    });
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 860 && nav.classList.contains('is-open')) closeNav();
+    });
+  }
+
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxCaption = document.getElementById('lightbox-caption');
