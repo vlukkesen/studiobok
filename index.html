@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Bok — creatieve cadeau's voor (jonge) sterren</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,600&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- floating doodles -->
+<div class="blob blob-1"></div>
+<div class="blob blob-2"></div>
+<div class="blob blob-3"></div>
+
+<!-- nav -->
+<nav class="nav">
+  <a href="#top" class="nav-logo">
+    <img src="assets/logo.png" alt="Studio Bok" />
+  </a>
+  <ul>
+    <li><a href="#over">Over ons</a></li>
+    <li><a href="#wenskaarten">Wenskaarten</a></li>
+    <li><a href="#tarot">Tarot</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- hero -->
+<header id="top" class="hero">
+  <div class="hero-inner">
+    <span class="kicker">Een creatieve onderneming uit Gent</span>
+    <h1>
+      <span class="word word-1">Originele</span>
+      <span class="word word-2">cadeau's</span>
+      <span class="word word-3">voor (jonge)</span>
+      <span class="word word-4">sterren<em>.</em></span>
+    </h1>
+    <p class="hero-sub">
+      Drie Gentse vrouwen, vriendinnen, collega's en artistieke zielen.
+      Bij Studio Bok doen we alles met een hoek af —
+      <strong>out-of-the-box is onze middle name.</strong>
+    </p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#wenskaarten">Bekijk onze wenskaarten</a>
+    </div>
+  </div>
+</header>
+
+<!-- over ons -->
+<section id="over" class="over">
+  <div class="over-grid">
+    <div class="over-text">
+      <span class="section-kicker">Hoi, wij zijn</span>
+      <h2>Studio <span class="ink">Bok</span>.</h2>
+      <p class="lead">
+        We staan garant voor <em>originele</em>, <em>creatieve</em> en <em>zelfgemaakte</em> cadeau's voor feestvierders, dromers en sterren-in-wording.
+      </p>
+      <p>
+        We tekenen, we schrijven én we ontwerpen alles van begin tot eind. Voor de druk en product&shy;afwerking werken we samen met lokale bedrijven.
+      </p>
+      <p>
+        Ben jij op zoek naar cadeau's waar je echt mee kan inspireren op een feest? Dompel je onder in onze creativiteit en laat de feestvierders mee genieten!
+      </p>
+      <ul class="features">
+        <li><span>✿</span> Eigen ontwerp</li>
+        <li><span>❀</span> Lokaal gedrukt</li>
+      </ul>
+    </div>
+    <div class="over-photo">
+      <div class="polaroid polaroid-feest">
+        <img src="assets/sfeerfoto.jpg" alt="Kinderfeest met Studio Bok kaarten" />
+        <span class="polaroid-caption">Een feest met een hoek af</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- wenskaarten -->
+<section id="wenskaarten" class="product product-cards">
+  <span class="section-kicker">Wenskaarten</span>
+  <h2>De Dieren Wensen</h2>
+  <p class="product-intro">
+    Onze inspirerende wenskaarten zorgen voor <em>verwondering</em> op elk feest. Je koopt ze aan in een doosje, alle genodigden vullen de kaartjes in én laten zo toffe boodschappen achter voor het feestvarken. Ideaal voor kinderen tussen 0 en 12 jaar.
+  </p>
+
+  <div class="cards-showcase">
+    <figure class="card card-cover" tabindex="0" role="button" aria-label="Vergroot de omslag" data-src="assets/fiche1.jpg" data-caption="De omslag">
+      <img src="assets/fiche1.jpg" alt="De Dieren Wensen — omslag" />
+      <figcaption>De omslag</figcaption>
+    </figure>
+    <figure class="card card-front" tabindex="0" role="button" aria-label="Vergroot voorbeeldkaart de olifant" data-src="assets/fiche35.jpg" data-caption="Voorbeeld: de olifant">
+      <img src="assets/fiche35.jpg" alt="Voorbeeldkaart — de olifant" />
+      <figcaption>Voorbeeld: de olifant</figcaption>
+    </figure>
+    <figure class="card card-back" tabindex="0" role="button" aria-label="Vergroot invulzijde" data-src="assets/fiche34.jpg" data-caption="Invulzijde">
+      <img src="assets/fiche34.jpg" alt="Voorbeeldkaart — achterkant om in te vullen" />
+      <figcaption>Invulzijde</figcaption>
+    </figure>
+  </div>
+
+  <div class="product-footer">
+    <div class="stat">
+      <span class="stat-number">18</span>
+      <span class="stat-label">kaarten per doosje</span>
+    </div>
+  </div>
+</section>
+
+<!-- lightbox for de dieren wensen -->
+<div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Vergrote afbeelding">
+  <button class="lightbox-close" aria-label="Sluiten">×</button>
+  <figure class="lightbox-figure">
+    <img id="lightbox-img" src="" alt="" />
+    <figcaption id="lightbox-caption"></figcaption>
+  </figure>
+</div>
+
+<!-- tarot -->
+<section id="tarot" class="product product-tarot">
+  <div class="tarot-grid">
+    <div class="tarot-card-wrap">
+      <div class="tarot-card">
+        <img src="assets/magier.jpg" alt="Tarotkaart — De Magiër" />
+      </div>
+      <div class="tarot-card tarot-card-ghost tarot-card-ghost-1"></div>
+      <div class="tarot-card tarot-card-ghost tarot-card-ghost-2"></div>
+    </div>
+    <div class="tarot-text">
+      <span class="section-kicker">Tarotkaarten</span>
+      <h2>Laat de kaarten <br/><span class="ink">voor zich spreken.</span></h2>
+      <p class="lead">
+        Het perfecte cadeau voor wie het leven graag beter wil begrijpen.
+      </p>
+      <p>
+        Verleden, heden én toekomst: neem ze onder de loep en ontdek wat de dieren over jou te vertellen hebben. Elke kaart is met de hand geschilderd — geen twee hetzelfde.
+      </p>
+      <div class="quote">
+        <span class="quote-mark">"</span>
+        <p>Niemand kent je toekomst beter, behalve de toekomst zelf.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact -->
+<section id="contact" class="contact">
+  <h2>Zin om samen te werken?</h2>
+  <p class="lead">
+    Laat ons weten welk feest je in gedachten hebt — wij toveren er iets moois van.
+  </p>
+  <div class="contact-cards">
+    <a class="contact-card" href="mailto:hallo@studiobok.be">
+      <span class="contact-icon">✉</span>
+      <span class="contact-label">E-mail</span>
+      <span class="contact-value">hallo@studiobok.be</span>
+    </a>
+    <a class="contact-card" href="https://www.instagram.com/studiobok" target="_blank" rel="noopener noreferrer">
+      <span class="contact-icon">☺</span>
+      <span class="contact-label">Instagram</span>
+      <span class="contact-value">@studiobok</span>
+    </a>
+    <a class="contact-card" href="https://www.facebook.com/studiobok" target="_blank" rel="noopener noreferrer">
+      <span class="contact-icon">f</span>
+      <span class="contact-label">Facebook</span>
+      <span class="contact-value">Studio Bok</span>
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© Studio Bok</p>
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
