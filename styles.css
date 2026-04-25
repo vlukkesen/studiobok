@@ -95,12 +95,16 @@ em { font-style: italic; color: var(--blue-deep); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px clamp(20px, 5vw, 64px);
+  padding: 0 clamp(20px, 5vw, 64px);
   background: #fff;
   border-bottom: 1px solid rgba(27, 45, 86, 0.06);
 }
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
 .nav-logo img {
-  height: 56px;
+  height: clamp(80px, 8vw, 110px);
   width: auto;
   display: block;
   transition: transform 0.3s ease;
@@ -141,8 +145,8 @@ em { font-style: italic; color: var(--blue-deep); }
   position: relative;
   padding: clamp(40px, 6vh, 80px) clamp(20px, 6vw, 80px);
   overflow: hidden;
-  min-height: calc(100vh - 88px);
-  min-height: calc(100svh - 88px);
+  min-height: calc(100vh - 110px);
+  min-height: calc(100svh - 110px);
   display: flex;
   align-items: center;
   justify-content: center;
