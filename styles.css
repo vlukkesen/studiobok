@@ -100,17 +100,12 @@ em { font-style: italic; color: var(--blue-deep); }
   border-bottom: 1px solid rgba(27, 45, 86, 0.06);
 }
 .nav-logo img {
-  height: 48px;
+  height: 56px;
   width: auto;
-  object-fit: contain;
-  object-position: left center;
-  clip-path: inset(0 55% 0 0);
-  margin-right: -55%;
-  transform: scale(1.6);
-  transform-origin: left center;
+  display: block;
   transition: transform 0.3s ease;
 }
-.nav-logo:hover img { transform: scale(1.6) rotate(-6deg); }
+.nav-logo:hover img { transform: rotate(-6deg); }
 
 .nav ul {
   list-style: none;
@@ -144,8 +139,13 @@ em { font-style: italic; color: var(--blue-deep); }
 /* ---------- hero ---------- */
 .hero {
   position: relative;
-  padding: clamp(60px, 10vh, 120px) clamp(20px, 6vw, 80px) clamp(80px, 14vh, 160px);
+  padding: clamp(40px, 6vh, 80px) clamp(20px, 6vw, 80px);
   overflow: hidden;
+  min-height: calc(100vh - 88px);
+  min-height: calc(100svh - 88px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero::before {
   content: "";
@@ -608,6 +608,24 @@ em { font-style: italic; color: var(--blue-deep); }
   font-weight: 700;
   font-size: 1.15rem;
   color: var(--ink);
+}
+.contact-card--placeholder {
+  cursor: default;
+  opacity: 0.7;
+}
+.contact-card--placeholder:hover {
+  transform: rotate(0) translateY(0);
+  border-color: transparent;
+}
+.contact-cards--placeholder .contact-card:nth-child(1) { transform: rotate(-2deg); }
+.contact-cards--placeholder .contact-card:nth-child(2) { transform: rotate(1deg); }
+.contact-cards--placeholder .contact-card:nth-child(3) { transform: rotate(-1deg); }
+.contact-card--placeholder .contact-value {
+  font-family: var(--script);
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--rose);
+  text-align: center;
 }
 
 /* ---------- footer ---------- */
